@@ -1,0 +1,8 @@
+html,
+body {
+  position: relative;
+  height: 100vh;
+}
+.omg-brand-small {
+  height: 30px;
+}
