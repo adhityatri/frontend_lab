@@ -13,7 +13,7 @@ body {
   color: #262626;
 }
 .omg-card-pattern {
-  background-image: url('/assets/img/pattern.png');
+  background-image: url('../assets/img/pattern.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -26,3 +26,5 @@ body {
   border-color: #262161;
   cursor: pointer;
 }
+
+/*# sourceMappingURL=main.css.map */
