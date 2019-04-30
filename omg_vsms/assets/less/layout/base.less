@@ -8,5 +8,33 @@ html, body{
         &-small{
             height: 30px;
         }
+        &-medium{
+            height: 50px;
+        }
+    }
+    &-color{
+        &-dark{
+            *{
+                color: @color-text;
+            }
+        }
+    }
+    &-card{
+        &-pattern{
+            background-image: url('/assets/img/pattern.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-bordered{
+            border: 1px solid darken(white, 10%);
+            transition: all .2s;
+        }
+        &-action{
+            &:hover{
+                background-color: darken(white, 2%);
+                border-color: @color-primary;
+                cursor: pointer;
+            }
+        }
     }
 }

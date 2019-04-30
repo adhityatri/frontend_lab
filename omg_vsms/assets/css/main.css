@@ -6,3 +6,23 @@ body {
 .omg-brand-small {
   height: 30px;
 }
+.omg-brand-medium {
+  height: 50px;
+}
+.omg-color-dark * {
+  color: #262626;
+}
+.omg-card-pattern {
+  background-image: url('/assets/img/pattern.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.omg-card-bordered {
+  border: 1px solid #e6e6e6;
+  transition: all .2s;
+}
+.omg-card-action:hover {
+  background-color: #fafafa;
+  border-color: #262161;
+  cursor: pointer;
+}
