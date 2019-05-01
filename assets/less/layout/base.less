@@ -1,0 +1,73 @@
+html, body{
+    position: relative;
+    height: 100vh; 
+}
+
+.omg{
+    &-brand{
+        &-small{
+            height: 30px;
+        }
+        &-medium{
+            height: 50px;
+        }
+    }
+    &-color{
+        &-dark{
+            *{
+                color: @color-text;
+            }
+        }
+    }
+    &-card{
+        &-pattern{
+            background-image: url('../../assets/img/pattern.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-bordered{
+            border: 1px solid darken(white, 10%);
+            transition: all .2s;
+        }
+        &-action{
+            &:hover{
+                background-color: darken(white, 2%);
+                border-color: @color-primary;
+                cursor: pointer;
+            }
+        }
+        &-primary{
+            &-red{
+                background-color: @color-primary-red;
+                *{
+                    color: white;
+                }
+            }
+        }
+    }
+    &-border{
+        border: 1px solid darken(white, 10%);
+    }
+    &-navbar{
+        background: @color-primary !important;
+        color: white;
+        padding: 0 10px;
+    }
+}
+
+.uk{
+    &-card{
+        &-primary{
+            background-color: @color-primary;
+        }
+    }
+    &-navbar{
+        &-nav{
+            >li{
+                >a{
+                    min-height: 50px;
+                }
+            }
+        }
+    }
+}
