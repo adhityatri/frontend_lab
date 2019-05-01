@@ -1,0 +1,25 @@
+{
+	"files": {
+		"main.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/main.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"helpers/colors.less",
+				"helpers/variables.less",
+				"layout/base.less"
+			]
+		}
+	}
+}
