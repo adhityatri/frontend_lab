@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Fleet Management</title>
+</head>
+
+<body class="uk-height-1-1">
+    <nav class="uk-navbar-container omg-navbar" uk-navbar>
+        <div class="uk-navbar-left">
+            <button class="uk-button uk-button-default uk-button-small uk-light uk-margin-small-right uk-border-rounded uk-background-white" type="button"
+                uk-toggle="target: #filter-wrapper">Filter</button>
+        </div>
+
+        <div class="uk-navbar-right uk-light">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#" uk-icon="icon: bell"></a></li>
+                <li class="uk-active"><a href="#" uk-icon="icon: commenting"></a></li>
+                <li>
+                    <a href="#">
+                        <img class="uk-border-circle" src="../assets/img/user.jpg" width="30" height="30"
+                            alt="Border circle">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="map" class="uk-height-1-1"></div>
+
+    <div id="filter-wrapper" class="uk-width-1-4 uk-animation-slide-left-small" uk-offcanvas="bg-close: false;">
+        <div class="uk-card uk-card-default uk-height-1-1 uk-flex uk-flex-column">
+            <div class="uk-card-header uk-padding-small">
+                <h4 class="uk-text-uppercase uk-margin-remove">Filter</h4>
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+            </div>
+            <div class="uk-card-body uk-padding-small uk-flex-1 uk-overflow-auto">
+                <div class="uk-margin">
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon" uk-icon="icon: search"></span>
+                        <input class="uk-input" type="text" placeholder="Searching">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label for="" class="uk-text-uppercase">Filter By</label>
+                </div>
+                <div uk-filter="target: .filter">
+                    <div class="uk-placeholder uk-padding-small">
+                        <ul class="uk-subnav uk-subnav-pill">
+                            <li uk-filter-control><a class="uk-border-rounded" href="#">All</a></li>
+                            <li uk-filter-control=".tag-online"><a class="uk-border-rounded" href="#">Online</a></li>
+                            <li uk-filter-control=".tag-offline"><a class="uk-border-rounded" href="#">Offline</a></li>
+                        </ul>
+                    </div>
+
+                    <ul uk-accordion class="uk-padding-small omg-border">
+                        <li>
+                            <a class="uk-accordion-title uk-margin-small-bottom" href="#">User Active</a>
+                            <hr class="uk-margin-remove">
+                            <div class="uk-accordion-content">
+                                <div class="filter uk-text-center">
+                                    <div class="tag-online uk-margin">
+                                        <div class="uk-card uk-card-default uk-card-body uk-padding-small uk-grid-collapse"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" src="../assets/img/user.jpg" width="30"
+                                                    height="30" alt="Border circle">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                Truck 01-00-10
+                                            </div>
+                                            <div class="uk-width-auto">
+                                                <a href="" uk-icon="icon: location"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tag-offline uk-margin">
+                                        <div class="uk-card uk-card-default uk-card-body uk-padding-small uk-grid-collapse"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" src="../assets/img/user.jpg" width="30"
+                                                    height="30" alt="Border circle">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                Truck 20-20-10
+                                            </div>
+                                            <div class="uk-width-auto">
+                                                <a href="" uk-icon="icon: location"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tag-online uk-margin">
+                                        <div class="uk-card uk-card-default uk-card-body uk-padding-small uk-grid-collapse"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" src="../assets/img/user.jpg" width="30"
+                                                    height="30" alt="Border circle">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                Truck 11-02-10
+                                            </div>
+                                            <div class="uk-width-auto">
+                                                <a href="" uk-icon="icon: location"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tag-online uk-margin">
+                                        <div class="uk-card uk-card-default uk-card-body uk-padding-small uk-grid-collapse"
+                                            uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" src="../assets/img/user.jpg" width="30"
+                                                    height="30" alt="Border circle">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                Truck 05-01-10
+                                            </div>
+                                            <div class="uk-width-auto">
+                                                <a href="" uk-icon="icon: location"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-margin">
+                    <label for="" class="uk-text-uppercase">Result</label>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default omg-card-primary-red uk-border-rounded">
+                        <div class="uk-card-body uk-padding-small uk-text-right uk-grid-small" uk-grid>
+                            <div class="uk-width-expand">
+                                <label for="" class="uk-display-block">P 6631 LC</label>
+                                <label for="" class="uk-text-meta">1hr Ago</label>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="" uk-icon="icon: more-vertical"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default omg-card-primary-red uk-border-rounded">
+                        <div class="uk-card-body uk-padding-small uk-text-right uk-grid-small" uk-grid>
+                            <div class="uk-width-expand">
+                                <label for="" class="uk-display-block">P 9873 LC</label>
+                                <label for="" class="uk-text-meta">10hr Ago</label>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="" uk-icon="icon: more-vertical"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-card uk-card-default omg-card-primary-red uk-border-rounded">
+                        <div class="uk-card-body uk-padding-small uk-text-right uk-grid-small" uk-grid>
+                            <div class="uk-width-expand">
+                                <label for="" class="uk-display-block">P 9873 LC</label>
+                                <label for="" class="uk-text-meta">10hr Ago</label>
+                            </div>
+                            <div class="uk-width-auto">
+                                <a href="" uk-icon="icon: more-vertical"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="../node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3S6TkXwBirMV63j1EROUNtvCkyTjetGY&callback=initMap"
+        async defer></script>
+</body>
+
+</html>

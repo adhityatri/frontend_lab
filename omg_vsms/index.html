@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Omg - VSMS</title>
+</head>
+
+<body>
+    <div class="uk-grid uk-grid-collapse uk-height-1-1" uk-grid>
+        <div class="uk-width-expand uk-height-1-1 uk-cover-container uk-background-primary">
+            <img src="assets/img/bg.png" uk-cover>
+            <div class="uk-position-cover uk-overlay-primary"></div>
+            <div class="uk-overlay uk-light uk-position-bottom uk-margin-xlarge-bottom">
+                <h1>Track, Analyze and Improve Your Fleet Operation</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nobis, odio a tenetur impedit libero.</p>
+                <button class="uk-button uk-button-default uk-border-rounded">Contact Sales</button>
+                <button class="uk-button uk-button-primary uk-border-rounded">Start Free Trial</button>
+            </div>
+        </div>
+        <div class="uk-width-1-4@m uk-width-1-5@xl uk-height-1-1">
+            <div class="uk-card uk-card-default uk-height-1-1 uk-flex uk-flex-column">
+                <div class="uk-card-header uk-padding-small">
+                    <nav class="uk-navbar">
+                        <div class="uk-navbar-left">
+                            <img class="omg-brand-small" src="assets/img/logo.png" alt="">
+                        </div>
+
+                        <div class="uk-navbar-right">
+                            <a class="uk-button uk-button-text">Need a Help?</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="uk-card-body uk-flex-1 uk-flex uk-flex-wrap uk-flex-wrap-middle">
+                    <div class="uk-width-1-1">
+                        <div class="uk-margin-medium-top">
+                            <ul class="uk-tab uk-flex-center" uk-tab="connect: .uk-switcher">
+                                <li class="uk-active">
+                                    <a href="#" aria-expanded="true" class="uk-text-bold">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-expanded="false" class="uk-text-bold">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-switcher">
+                            <form class="uk-margin uk-animation-slide-left-small uk-active" role="form" method="post">
+                                <div class="uk-margin">
+                                    <label for="email" class="uk-h5 uk-display-block uk-margin-small">Email</label>
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                        <input type="email" class="uk-input uk-border-rounded"
+                                            placeholder="username@email.com" name="signinmail" id="signinmail" autofocus="autofocus" autocapitalize="off">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label for="password"
+                                        class="uk-h5 uk-display-block uk-margin-small">Password</label>
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                        <input type="password" name="password" id="password"
+                                            class="uk-input uk-border-rounded" placeholder="password" autocomplete="current-password" maxlength="4096">
+                                    </div>
+                                </div>
+                                <div class="uk-clearfix uk-margin-small">
+                                    <a href="pages/homepage.html"
+                                        class="uk-button uk-button-primary uk-button-default uk-width-1-1 uk-text-capitalize uk-border-rounded">
+                                        Log in
+                                    </a>
+                                </div>
+                            </form>
+                            <form class="oe_login_form uk-margin uk-animation-slide-left-small" role="form"
+                                method="post">
+                                <div class="uk-margin">
+                                    <label for="email" class="uk-h5 uk-display-block uk-margin-small">Email</label>
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                        <input type="email" class="uk-input uk-border-rounded"
+                                            placeholder="username@email.com" name="signinmail" id="signinmail"
+                                            required="required" autofocus="autofocus" autocapitalize="off">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label for="password"
+                                        class="uk-h5 uk-display-block uk-margin-small">Password</label>
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                        <input type="password" name="password" id="password"
+                                            class="uk-input uk-border-rounded" placeholder="password"
+                                            required="required" autocomplete="current-password" maxlength="4096">
+                                    </div>
+                                </div>
+                                <div class="uk-margin">
+                                    <label for="repeatpass" class="uk-h5 uk-display-block uk-margin-small">Repeat
+                                        Password</label>
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                        <input type="password" name="password" id="password"
+                                            class="uk-input uk-border-rounded" placeholder="password"
+                                            required="required" autocomplete="current-password" maxlength="4096">
+                                    </div>
+                                </div>
+                                <div class="clearfix oe_login_buttons uk-margin-small">
+                                    <button type="submit"
+                                        class="uk-button uk-button-primary uk-button-default uk-width-1-1 uk-text-capitalize uk-border-rounded">Sign
+                                        Up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-footer uk-padding-small">
+                    Forgot Your Password? <a href="#" class="uk-button uk-button-text uk-text-primary">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
