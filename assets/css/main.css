@@ -1,0 +1,48 @@
+html,
+body {
+  position: relative;
+  height: 100vh;
+}
+.omg-brand-small {
+  height: 30px;
+}
+.omg-brand-medium {
+  height: 50px;
+}
+.omg-color-dark * {
+  color: #262626;
+}
+.omg-card-pattern {
+  background-image: url('../../assets/img/pattern.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.omg-card-bordered {
+  border: 1px solid #e6e6e6;
+  transition: all .2s;
+}
+.omg-card-action:hover {
+  background-color: #fafafa;
+  border-color: #262161;
+  cursor: pointer;
+}
+.omg-card-primary-red {
+  background-color: #ef5350;
+}
+.omg-card-primary-red * {
+  color: white;
+}
+.omg-border {
+  border: 1px solid #e6e6e6;
+}
+.omg-navbar {
+  background: #262161 !important;
+  color: white;
+  padding: 0 10px;
+}
+.uk-card-primary {
+  background-color: #262161;
+}
+.uk-navbar-nav > li > a {
+  min-height: 50px;
+}
