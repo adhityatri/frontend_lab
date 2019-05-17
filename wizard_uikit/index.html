@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,45 +12,28 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
+
 <body>
-    <form id="myWizard" type="get" action="" class="form-horizontal">
-        <section class="step" data-step-title="The first">
-            <div class="control-group">
-                <label class="control-label" for="inputEmail">Email</label>
-                <div class="controls">
-                    <input type="text" id="inputEmail" placeholder="Email" class="input-xlarge" title="Email is required !" required >
-                </div>
+    <section class="uk-height-1-1 uk-background-muted uk-padding">
+        <div class="uk-card uk-card-default uk-height-1-1 uk-flex uk-flex-column">
+            <div class="uk-card-header">
+                <span class="uk-text-uppercase">Jquery Steps with uikit 3</span>
             </div>
-            <div class="control-group">
-                <label class="control-label" for="inputPassword">Password</label>
-                <div class="controls">
-                    <input type="password" id="inputPassword" placeholder="Password" class="input-xlarge">
-                </div>
+            <div class="uk-card-body uk-flex-1">
+                <form id="myWizard" type="get" action="" class="uk-flex uk-flex-column uk-height-1-1">
+                    <section class="step" data-step-title="The first">
+                        <h1>Hello, The First</h1>
+                    </section>
+                    <section class="step" data-step-title="The second">
+                        <h1>Hello, The Second</h1>
+                    </section>
+                    <section class="step" data-step-title="The third">
+                        <h1>Hello, The Third</h1>
+                    </section>
+                </form>
             </div>
-        </section>
-        <section class="step" data-step-title="The second">
-            <div class="control-group">
-                <label class="control-label" for="inputUsername">Username</label>
-                    <div class="controls">
-                    <input type="text" id="inputUsername" placeholder="Username" class="input-xlarge">
-                </div>
-            </div>
-        </section>
-        <section class="step" data-step-title="The third">
-            <div class="control-group">
-                <label class="control-label" for="inputFirstname">Firstname</label>
-                    <div class="controls">
-                    <input type="text" id="inputFirstname" placeholder="Firstname" class="input-xlarge">
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="inputCity">City</label>
-                    <div class="controls">
-                    <input type="text" id="inputCity" placeholder="City" class="input-xlarge">
-                </div>
-            </div>
-        </section>
-    </form>
+        </div>
+    </section>
 
     <script type="text/javascript" src="assets/library/uikit/js/uikit.min.js"></script>
     <script type="text/javascript" src="assets/library/uikit/js/uikit-icons.min.js"></script>
@@ -57,6 +41,12 @@
 
     <script type="text/javascript">
         $('#myWizard').easyWizard();
+        $('.easyWizardSteps').addClass("mis-wizard-step");
+        $('.easyWizardWrapper').addClass("mis-wizard-wrapper uk-height-1-1 uk-flex-1");
+        $('.easyWizardButtons').addClass("mis-wizard-footer uk-flex uk-flex-right");
+        $('.prev').addClass("uk-button uk-button-danger uk-border-rounded uk-button-small uk-margin-small-right");
+        $('.next').addClass("uk-button uk-button-primary uk-border-rounded uk-button-small");
     </script>
 </body>
+
 </html>

@@ -1,8 +1,56 @@
-.easyWizardSteps {list-style:none;width:100%;overflow:hidden;margin:0;padding:0;border-bottom:1px solid #ccc;margin-bottom:20px}
-.easyWizardSteps li {font-size:18px;display:inline-block;padding:10px;color:#B0B1B3;margin-right:20px;}
-.easyWizardSteps li span {font-size:24px}
-.easyWizardSteps li.current {color:#000}
-.easyWizardButtons {overflow:hidden;padding:10px;}
-.easyWizardButtons button, .easyWizardButtons .submit {cursor:pointer}
-.easyWizardButtons .prev {float:left}
-.easyWizardButtons .next, .easyWizardButtons .submit {float:right}
+html, body {
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+
+.mis-wizard-step {
+  background: white;
+  background: -moz-linear-gradient(top, white 0%, #f6f6f6 47%, #ededed 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(top, white 0%, #f6f6f6 47%, #ededed 100%);
+  background: -o-linear-gradient(top, white 0%, #f6f6f6 47%, #ededed 100%);
+  background: -ms-linear-gradient(top, white 0%, #f6f6f6 47%, #ededed 100%);
+  background: linear-gradient(to bottom, white 0%, #f6f6f6 47%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 ); }
+  .mis-wizard-step li,
+  .mis-wizard-step span {
+    font-size: 14px !important; }
+.mis-wizard-wrapper {
+  height: 100%; }
+
+.easyWizardSteps {
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px; }
+
+.easyWizardSteps li {
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+  color: #B0B1B3;
+  margin-right: 20px; }
+
+.easyWizardSteps li span {
+  font-size: 24px; }
+
+.easyWizardSteps li.current {
+  color: #000; }
+
+.easyWizardButtons {
+  overflow: hidden;
+  padding: 10px; }
+
+.easyWizardButtons button, .easyWizardButtons .submit {
+  cursor: pointer; }
+
+.easyWizardButtons .prev {
+  float: left; }
+
+.easyWizardButtons .next, .easyWizardButtons .submit {
+  float: right; }
+
+/*# sourceMappingURL=style.css.map */
